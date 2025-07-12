@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serrurerie Colombes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fff9ed;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff9ed;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        h1, h2 {
+            color: #014D57;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            margin-top: 2em;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .contact {
+            margin-top: 30px;
+            font-size: 1.1em;
+            background: #eef6f8;
+            padding: 15px;
+            border-left: 4px solid #0097a7;
+            border-radius: 6px;
+        }
+        .contact a {
+            color: #007b8a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .whatsapp-icon {
+            vertical-align: middle;
+            width: 20px;
+        }
+        .artisan-photo {
+            max-width: 450px;
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 30px auto 10px;
+            display: block;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 5px solid #ffa502;
+            padding: 12px;
+            margin-top: 20px;
+            border-radius: 6px;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9em;
+            color: #888;
+            background: #ffffff;
+            margin-top: 40px;
+        }
+        header img {
+            max-height: 160px;
+        }
+        .siret {
+            font-size: 0.85em;
+            color: #014D57;
+            text-align: right;
+            padding-right: 10px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        .testimonial-carousel {
+            margin-top: 30px;
+            background: #fefbf5;
+            padding: 20px;
+            border-left: 4px solid #ffd166;
+            border-radius: 8px;
+            position: relative;
+            min-height: 120px;
+        }
+        .testimonial-slide {
+            display: none;
+        }
+        .testimonial-slide.active {
+            display: block;
+        }
+        .testimonial-text {
+            font-size: 0.95em;
+            color: #333;
+        }
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffd166;
+            border: none;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #014D57;
+        }
+        .nav-arrow.right {
+            right: 10px;
+        }
+            
+        
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo_resized.png" alt="Logo Serrurerie Colombes">
+    </header>
+    <main style="padding-left: 20px; padding-right: 20px;">
+        <h1>Serrurerie Colombes</h1>
+        <p>Artisan serrurier disponible sur <strong>Colombes</strong>. Interventions rapides, y compris en urgence, avec le soin d’un professionnel indépendant.</p>
+
+        <h2>Prestations :</h2>
+        <ul>
+            <li>Ouverture de porte (claquée, clé perdue, cassée…)</li>
+            <li>Remplacement de cylindre et/ou serrure</li>
+            <li>Blindage de porte</li>
+            <li>Pose de poignées blindées</li>
+            <li>Sécurisation après effraction</li>
+        </ul>
+
+        <div class="warning">
+            <strong>Devis gratuit.</strong><br>
+            Attention aux arnaques : un déplacement pour ouverture de porte ne peut raisonnablement pas coûter 19€ ou 49€, surtout en région parisienne. <strong>Pour ce genre d'intervention, comptez plutôt entre 120€ et 200€</strong>
+        </div>
+
+        <p><strong>Zone d’intervention :</strong> Colombes et alentours : 92, 93, 95, 78, Paris.</p>
+
+        <div class="contact">
+            📞 <strong>07 44 43 69 03</strong><br>
+            📱 Contact possible via WhatsApp : <a href="https://wa.me/33744436903"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="whatsapp-icon"> 07 44 43 69 03</a>
+        </div>
+
+        <img src="photo_resized.jpg" alt="Serrurier en intervention" class="artisan-photo">
+
+        <div class="siret">SIRET : 82037989900025</div>
+        <h2>Avis clients</h2>
+
+        <div class="testimonial-carousel">
+            <button class="nav-arrow right" onclick="changeSlide(1)">&#8594;</button>
+            <div class="testimonial-slide active">
+                <div class="testimonial-text">
+                    ⭐⭐⭐⭐⭐<br>
+                    <strong>Stéphanie</strong> (10/07/2024) via Yoojo<br>
+                    <em>“Merci à Valérian qui s’est déplacé et m’a ouvert la porte. J’étais enfermée dehors et il s’est rendu disponible à une heure tardive. Merci beaucoup.”</em>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-text">
+                    ⭐⭐⭐⭐⭐<br>
+                    <strong>Ivona</strong> (02/06/2024)<br>
+                    <em>“Professionnel courtois, sérieux et efficace. Il est intervenu rapidement pour changer une serrure. Je recommande les yeux fermés, les artisans honnêtes sont rares de nos jours.”</em>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-text">
+                    ⭐⭐⭐⭐⭐<br>
+                    <strong>Mahmoud</strong> (22/05/2024)<br>
+                    <em>“Sur place en 30 minutes chrono. Détection rapide du problème et proposition de remplacement immédiate et à un prix raisonnable.”</em>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-text">
+                    ⭐⭐⭐⭐⭐<br>
+                    
+                </div>
+            </div></div>
+
+        <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-slide');
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
+    </main>
+    <footer>
+        &copy; 2025 Serrurerie Colombes – Tous droits réservés
+    </footer>
+</body>
+</html>
